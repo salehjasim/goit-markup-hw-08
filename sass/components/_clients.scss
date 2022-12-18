@@ -1,0 +1,40 @@
+.clients {
+  padding-bottom: 60px;
+  @media screen and (min-width:$desktop) {
+    padding-bottom: 94px;
+  }
+}
+.clients-list {
+
+  @media screen and (max-width:1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width:1200px) {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+  }
+}
+.clients-list__companies {
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+  stroke: none;
+  fill: #AFB1B8;
+  width: 210px;
+  height: 92px;
+
+  &:hover,
+  &:focus {
+    transition: fill  cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+    border: 1px solid var(--blue);
+    border-radius: 4px;
+    fill: var(--blue);
+  }
+
+  @media screen and (min-width:1200px) {
+    width: 170px;
+  }
+}
